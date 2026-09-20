@@ -28,3 +28,24 @@ links.forEach(function(link) {
 
 });
 ```
+const changingText = document.getElementById("changingText");
+
+const text = [
+    "Nava Dhanushka",
+    "Web Developer",
+    "Full stack Developer",
+];
+
+let i = 0;
+
+setInterval(function() {
+
+    changingText.textContent = text[i];
+
+    i++;
+
+    if (i == text.length) {
+        i = 0;
+    }
+
+}, 1000);
